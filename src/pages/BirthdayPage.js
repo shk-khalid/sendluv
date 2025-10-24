@@ -1,19 +1,21 @@
 import PixelAnimator from "../PixelAnimator";
-import cake1 from "../assets/cake1.png";
-import cake2 from "../assets/cake2.png";
-import cake3 from "../assets/cake3.png";
-import cake100 from "../assets/100.png";
-import cake80 from "../assets/80.png";
-import cake60 from "../assets/60.png";
-import cake40 from "../assets/40.png";
-import cake20 from "../assets/20.png";
-import birthdayText from "../assets/birthdaytext.png";
 import "../App.css";
 import Confetti from "../Confetti";
 import PhotoOverlay from "../components/PhotoOverlay";
 import { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import birthdaySong from "../assets/bdayaudo.mp3";
+
+// Image paths from public folder
+const cake1 = "/images/cake1.png";
+const cake2 = "/images/cake2.png";
+const cake3 = "/images/cake3.png";
+const cake100 = "/images/100.png";
+const cake80 = "/images/80.png";
+const cake60 = "/images/60.png";
+const cake40 = "/images/40.png";
+const cake20 = "/images/20.png";
+const birthdayText = "/images/birthdaytext.png";
 
 export default function BirthdayPage() {
   const audioRef = useRef(null);
