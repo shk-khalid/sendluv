@@ -59,9 +59,8 @@ export default function AdminPage() {
       
       // Generate shareable link
       const baseUrl = window.location.origin;
-      const basePath = process.env.NODE_ENV === 'production' ? '/bdaycakee' : '';
       const encodedUrl = encodeURIComponent(publicUrl);
-      const link = `${baseUrl}${basePath}/celebrate?photo=${encodedUrl}`;
+      const link = `${baseUrl}/celebrate?photo=${encodedUrl}`;
       
       console.log('Shareable link:', link);
       setShareableLink(link);
