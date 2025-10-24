@@ -4,9 +4,8 @@ import Confetti from "../Confetti";
 import PhotoOverlay from "../components/PhotoOverlay";
 import { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import birthdaySong from "../assets/bdayaudo.mp3";
 
-// Image paths from public folder
+// Asset paths from public folder
 const cake1 = "/images/cake1.png";
 const cake2 = "/images/cake2.png";
 const cake3 = "/images/cake3.png";
@@ -16,6 +15,7 @@ const cake60 = "/images/60.png";
 const cake40 = "/images/40.png";
 const cake20 = "/images/20.png";
 const birthdayText = "/images/birthdaytext.png";
+const birthdaySong = "/audio/bdayaudio.mp3";
 
 export default function BirthdayPage() {
   const audioRef = useRef(null);

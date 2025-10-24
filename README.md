@@ -1,4 +1,6 @@
 
+---
+
 # 🎂 sendLuv – Birthday Celebration App
 
 > An interactive birthday celebration experience with photo overlays, microphone-reactive animations, and confetti! 🎉
@@ -8,6 +10,8 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 **Live Demo:** [https://sendluv.vercel.app/](https://sendluv.vercel.app/)
+
+**Repository:** [https://github.com/shk-khalid/sendluv.git](https://github.com/shk-khalid/sendluv.git)
 
 ---
 
@@ -99,15 +103,15 @@ WITH CHECK (bucket_id = 'overlays');
 sendluv/
 ├── public/
 │   ├── index.html
-│   └── images/              # All image assets
-│       ├── cake1.png        # Cake animation frames
-│       ├── cake2.png
-│       ├── cake3.png
-│       ├── 20.png - 100.png # Volume-based frames
-│       └── birthdaytext.png
+│   ├── images/              # All image assets
+│   │   ├── cake1.png        # Cake animation frames
+│   │   ├── cake2.png
+│   │   ├── cake3.png
+│   │   ├── 20.png - 100.png # Volume-based frames
+│   │   └── birthdaytext.png
+│   └── audio/
+│       └── bdayaudio.mp3    # Birthday song
 ├── src/
-│   ├── assets/              # Audio files only
-│   │   └── bdayaudo.mp3     # Birthday song
 │   ├── components/          # PhotoUpload, PhotoOverlay, Confetti, PixelAnimator
 │   ├── pages/               # AdminPage, BirthdayPage
 │   ├── App.js               # Router
@@ -137,6 +141,7 @@ sendluv/
 * Sing or blow to grow cake
 * Reach max volume for confetti
 * Photo reveal appears
+* Background music plays automatically from `public/audio/bdayaudio.mp3`
 
 ---
 
@@ -173,7 +178,7 @@ const selectCakeFrameByVolume = (volumeLevel) => {
 
 ### Modify Background Music
 
-Replace `src/assets/bdayaudo.mp3`
+Replace `public/audio/bdayaudio.mp3`
 
 ---
 
@@ -248,6 +253,8 @@ For questions or further information, please contact:
 
 📧 Khalid Shaikh – [shk.khalid18@gmail.com](mailto:shk.khalid18@gmail.com)
 
-📂 Project Repository: sendLuv
+📂 Project Repository: [Smart Delivery Management System](https://github.com/shk-khalid/sendluv.git)
 
 ---
+
+
